@@ -1,0 +1,16 @@
+### Dotenv
+.env
+.env.json
+.env.toml
+
+### Jetbrains
+.idea
+
+### Project
+*.zip
+dist
+
+### Terraform
+*.terraform
+*tfstate*
+variables.json

@@ -12,13 +12,10 @@ export def get-config [variables_path: string, tags_path: string] {
 }
 
 export def add-env-variables [variables] {
-    let from_env_variables = {
-        aws_region: (try { $env.AWS_REGION })
-    }
-
     return {
        ...$variables,
-       aws_region: (try { $env.AWS_REGION })
+       aws_region: (try { $env.AWS_REGION }),
+       curseforge_api_key: (try { $env.CURSEFORGE_API_KEY })
    }
 }
 

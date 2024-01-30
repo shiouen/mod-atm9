@@ -1,7 +1,10 @@
 locals {
   aws_account_id = data.aws_caller_identity.current.account_id
 
-  default_server_environment_variables = [{ name = "EULA", value = "TRUE" }]
+  default_server_environment_variables = [
+    { name = "EULA", value = "TRUE" },
+    { name = "CF_API_KEY", value = var.curseforge_api_key }
+  ]
 
   ecs_cluster_name = random_id.cluster-name.dec
   ecs_service_name = random_id.service-name.dec

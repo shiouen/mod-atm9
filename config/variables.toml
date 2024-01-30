@@ -1,0 +1,19 @@
+domain_name = "mctheboys.com"
+fargate_spot_pricing = true
+minecraft_edition = "java"
+server_cpu_units = 4096
+server_debug = true
+
+server_memory = 8192
+server_notifications_email_addresses = ["olivier.va@outlook.com"]
+
+subdomain_part = "atm9"
+vpc_id = "vpc-0aec9f0b8186305a3"
+
+[[server_environment_variables]]
+name = "MODPACK"
+value = "https://www.curseforge.com/api/v1/mods/715572/files/5055231/download"
+
+[[server_environment_variables]]
+name = "VERSION"
+value = "1.20.1"

@@ -5,6 +5,11 @@ variable "aws_region" {
   type        = string
 }
 
+variable "curseforge_api_key" {
+  description = "API Key to access curseforge modpacks."
+  type        = string
+}
+
 variable "domain_name" {
   description = "The domain name."
   type        = string
